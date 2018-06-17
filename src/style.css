@@ -1,0 +1,96 @@
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.text-input {
+  padding: 5px;
+  height: 25px;
+  width: 25vw;
+  margin: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.button {
+  margin: 20px 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.shape {
+  outline: none;
+  border-width: 0;
+  background-color: #9ea3a6;
+  width: 40vw;
+  height: 40vw;
+  box-shadow: 0 0 6px rgba(20, 0, 0, 0.2);
+  transition: all 200ms ease-out;
+}
+
+.shape:focus,
+.shape:hover {
+  box-shadow: 0 0 12px red;
+}
+
+.flex {
+  display: flex;
+}
+
+.controls {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  margin-top: 30px;
+  width: 30vw;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  color: tomato;
+}
+
+@media only screen and (max-width: 480px) {
+  .shape {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .slider {
+    width: 60vw;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .text-input {
+    width: 60vw;
+  }
+}

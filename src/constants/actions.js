@@ -1,0 +1,6 @@
+export const CHANGE_SHAPE = 'CHANGE_SHAPE';
+export const RANDOM_SHAPE = 'RANDOM_SHAPE';
+
+export const SIGN_IN_SUCCESS = 'SIGN_IN_SUCCESS';
+export const SIGN_IN_ERROR = 'SIGN_IN_ERROR';
+export const SIGN_OUT_SUCCESS = 'SIGN_OUT_SUCCESS';
